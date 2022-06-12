@@ -14,6 +14,9 @@ def get_name():
 
 
 def play_game():
+    """
+    Player selects difficulty level and game runs
+    """
     level = input('Choose level - E for easy, M for medium or H for hard: \n')
     time.sleep(0.5)
 
@@ -62,7 +65,6 @@ def play_game():
 
 def main():
     get_name()
-    play_game()
     again = 'y'
     while again.lower() == "y":
         play_game()
