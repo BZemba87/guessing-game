@@ -34,7 +34,13 @@ def play_game():
 
     number_of_guesses = 1
     while number_of_guesses <= tries:
-        guess = int(input("Your guess: "))
+        try:
+            guess = int(input("Your guess: "))
+        except ValueError:
+            print("Must be a number!  Try again.")
+            time.sleep(1)
+            play_game()  # stops game from crashing
+
         if guess < number:
             print("Your guess is too low!")
             time.sleep(1)
@@ -48,17 +54,18 @@ def play_game():
             return
     else:
         print('You have run out of guesses! The number was', number)
-        
 
 
 def main():
     get_name()
+    play_game()
     again = 'y'
     while again.lower() == "y":
         play_game()
         again = input("Would you like to play again?  (y/n): ")
         if again.lower() == "n":
             print("Bye")
+
 
 if __name__ == "__main__":
     main()
