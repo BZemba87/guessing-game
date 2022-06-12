@@ -5,6 +5,9 @@ print("Welcome to the Number Guessing Game!\n")
 time.sleep(1)
 
 def get_name():
+    """
+    Asks player if they are ready to play and tells player to enter name
+    """
     player_name = input("Ready to play?  Please enter your name: \n")
     print("Hello", player_name)
     time.sleep(1)
@@ -20,12 +23,13 @@ def play_game():
     elif level.lower() == "m":
         max_number = 100
         tries = 8
-    elif level.lower()== "h":
+    elif level.lower() == "h":
         max_number = 500
         tries = 10
     else:
-        print("Sorry!  Invalid input, please try again!")
+        print("Sorry!  Please select e, m or h!")
         print(" ")
+        time.sleep(1)
         play_game()  # stops game from crashing
 
     number = random.randint(1, max_number)
