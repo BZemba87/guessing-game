@@ -4,13 +4,18 @@ import time
 print("Welcome to the Number Guessing Game!\n")
 time.sleep(1)
 
+
 def get_name():
     """
-    Asks player if they are ready to play and tells player to enter name
+    Asks player if they are ready to play and tells player to enter name.
+    Name must be letters not numbers.
     """
     player_name = input("Ready to play?  Please enter your name: \n")
+    if (not player_name.isalpha()):
+        print("Sorry, I need a name!")
+        get_name()
+        return
     print("Hello", player_name)
-    time.sleep(1)
 
 
 def play_game():
@@ -75,11 +80,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
