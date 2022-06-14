@@ -47,18 +47,18 @@ def play_game():
     number_of_guesses = 1
     while number_of_guesses <= tries:
         try:
-            guess = int(input("Your guess: "))
+            guess = int(input("Your guess: \n"))
         except ValueError:
             print("Must be a number!  Try again.")
             time.sleep(1)
             play_game()  # stops game from crashing
 
         if guess < number:
-            print("Oops too low!")
+            print("Oops too low!\n")
             time.sleep(1)
             number_of_guesses += 1
         if guess > number:
-            print("Oops too high!")
+            print("Oops too high!\n")
             time.sleep(1)
             number_of_guesses += 1
         elif guess == number:
