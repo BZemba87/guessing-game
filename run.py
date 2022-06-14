@@ -25,13 +25,13 @@ def play_game():
     level = input('Choose level - E for easy, M for medium or H for hard: \n')
     time.sleep(0.5)
 
-    if level.lower() == "e":
+    if level.lower() == "e" or level.lower() == "easy":
         max_number = 10
         tries = 5
-    elif level.lower() == "m":
+    elif level.lower() == "m" or level.lower() == "medium":
         max_number = 100
         tries = 8
-    elif level.lower() == "h":
+    elif level.lower() == "h" or level.lower() == "hard":
         max_number = 500
         tries = 10
     else:
@@ -54,11 +54,11 @@ def play_game():
             play_game()  # stops game from crashing
 
         if guess < number:
-            print("Your guess is too low!")
+            print("Oops too low!")
             time.sleep(1)
             number_of_guesses += 1
         if guess > number:
-            print("Your guess is too high!")
+            print("Oops too high!")
             time.sleep(1)
             number_of_guesses += 1
         elif guess == number:
