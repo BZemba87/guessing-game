@@ -11,7 +11,7 @@ The live site can be found [here](https://guessing-game-pp3.herokuapp.com/)
 
 # How to play
 
-
+The game is between the computer and 1 player.  The player must enter a name and then select the difficulty level (easy, medium or hard).  The computer will then think of a random number within a known range and the user has to guess the correct number within a limited amount of tries.  Whether they lose or win, they will be asked if they would like to play again.  
 
 
 
