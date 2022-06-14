@@ -8,3 +8,10 @@ The live site can be found [here](https://guessing-game-pp3.herokuapp.com/)
 
 <h2 align ="center"><img src = "assets/docs/am-i-responsive-gg.jpg"></h2>
 
+
+# How to play
+
+
+
+
+
