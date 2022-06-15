@@ -11,7 +11,7 @@ def clear_screen():
 
 
 print("Welcome to the Number Guessing Game!\n")
-time.sleep(1)
+time.sleep(2)
 clear_screen()
 
 
