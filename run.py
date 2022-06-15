@@ -96,7 +96,7 @@ def main():
         again = input("Would you like to play again?  (y/n): ")
         clear_screen()
         if again.lower() == "n":
-            print("Bye")
+            print("Ok, thanks for playing!  See ya!")
            
 
 
