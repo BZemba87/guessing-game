@@ -85,6 +85,7 @@ def play_game():
             return
     else:
         print('You have run out of guesses! The number was', number)
+        time.sleep(2)
         clear_screen()
 
 
