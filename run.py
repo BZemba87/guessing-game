@@ -61,7 +61,7 @@ def play_game():
     number_of_guesses = 1
     while number_of_guesses <= tries:
         try:
-            guess = int(input("Your guess: "))
+            guess = int(input("What's the number? "))
             clear_screen()
         except ValueError:
             print("Must be a number!  Try again.")
