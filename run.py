@@ -1,6 +1,7 @@
 import random
 import time
 import os
+import termcolor
 
 
 def clear_screen():
@@ -10,7 +11,7 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-print("Welcome to the Number Guessing Game!\n")
+termcolor.cprint("Welcome to the Number Guessing Game!", "magenta")
 time.sleep(2)
 clear_screen()
 
@@ -23,7 +24,7 @@ def get_name():
     player_name = input("Ready to play?  Please enter your name: \n")
     clear_screen()
     if (not player_name.isalpha()):
-        print("Sorry, I need a name!")
+        termcolor.cprint("Sorry, I need a name!", "red")
         get_name()
         return
     print("Hello", player_name)
@@ -48,7 +49,7 @@ def play_game():
         max_number = 500
         tries = 10
     else:
-        print("Sorry!  Please select e, m or h!")
+        termcolor.cprint("Sorry!  Please select e, m or h!", "red")
         print(" ")
         time.sleep(1)
         play_game()  # stops game from crashing
@@ -64,17 +65,18 @@ def play_game():
             guess = int(input("What's the number? "))
             clear_screen()
         except ValueError:
-            print("Must be a number!  Try again.")
+            termcolor.cprint("Must be a number!  Try again.", "red")
             time.sleep(1)
+            clear_screen()
             play_game()  # stops game from crashing
 
         if guess < number:
-            print("Oops too low!\n")
+            termcolor.cprint("Oops too low!", "red")
             time.sleep(1)
             clear_screen()
             number_of_guesses += 1
         if guess > number:
-            print("Oops too high!\n")
+            termcolor.cprint("Oops too high!", "red")
             time.sleep(1)
             clear_screen()
             number_of_guesses += 1
@@ -86,7 +88,7 @@ def play_game():
     else:
         print('You have run out of guesses! The number was', number)
         time.sleep(2)
-        clear_screen()
+        
 
 
 def main():
@@ -97,7 +99,7 @@ def main():
         again = input("Would you like to play again?  (y/n): ")
         clear_screen()
         if again.lower() == "n":
-            print("Ok, thanks for playing!  See ya!")
+            termcolor.cprint("Ok, thanks for playing!  See ya!", "magenta")
            
 
 
