@@ -63,6 +63,19 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 <h2 align ="center"><img src = "assets/docs/level-error.jpg"></h2>
 
+### Game Play
+- The computer tells the player it is thinking of a number between 1 and 10, 1 and 100 or 1 and 500 depending on the difficulty level selected by the player.  
+
+<h2 align ="center"><img src = "assets/docs/play.jpg"></h2>
+
+- The player will receive hints if their guess needs to be higher or lower
+
+<h2 align ="center"><img src = "assets/docs/hint.jpg"></h2>
+
+- The player will be alerted if they have entered an invalid guess (such as a letter, blank space or character) and they will be prompted to try again.
+
+<h2 align ="center"><img src = "assets/docs/play-error.jpg"></h2>
+
 
 
 
