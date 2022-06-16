@@ -26,11 +26,20 @@ The game is between the computer and 1 player.  The player must enter a name and
 - As a user, I want feedback on whether I have won or lost
 - As a user, I want the option to play again 
 
-
-
 # Features
 
 ## Existing Features
+
+### Welcome Message
+- The player is greeted with a welcome message and the name of the game.
+
+### Ready to Play
+- The player is taken to the next page which asks if they are ready to play and they are then prompted to enter a name.
+- If the user enters a number or a blank space, an error message will alert them that a name is required to play.
+
+### Select Difficulty Level
+- The player is greeted and then asked to select level - easy, medium or hard.
+- If user enters anything other than e, easy, m, medium, h, hard, an error message will alert them to correctly select the level.
 
 
 
