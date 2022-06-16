@@ -40,7 +40,7 @@ The game is between the computer and 1 player.  The player must enter a name and
 ## Existing Features
 
 ### Welcome Message
-- The player is greeted with a welcome message and the name of the game.
+- The player is greeted with a welcome message, name of the game and a short message explaining the aim of the game.
 
 <h2 align ="center"><img src = "assets/docs/welcome.jpg"></h2>
 

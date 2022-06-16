@@ -63,7 +63,7 @@ def play_game():
     number = random.randint(1, max_number)
     print('I am thinking of a number between 1 and ' + str(max_number) + "\n")
     time.sleep(2)
-    clear_screen()
+
 
     number_of_guesses = 1
     while number_of_guesses <= tries:
