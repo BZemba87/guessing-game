@@ -25,10 +25,12 @@ The game is between the computer and 1 player.  The player must enter a name and
 ## User Goals
 - As a user, I want to play a fun guessing game
 - As a user, I want to choose how challenging I want the game to be 
+- As a user, I want the game to be user-friendly
 
 ## User Stories 
 - As a user, I want to play a game that is straightforward and immediately easy to understand
 - As a user, I want to be able to select the difficulty level of the game
+- As a user, I want to be alerted to an invalid input and given the chance to re-enter data 
 - As a user, I want feedback and hints on my progression
 - As a user, I want feedback on whether I have won or lost
 - As a user, I want the option to play again 
@@ -44,11 +46,24 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 ### Ready to Play
 - The player is taken to the next page which asks if they are ready to play and they are then prompted to enter a name.
-- If the user enters a number or a blank space, an error message will alert them that a name is required to play.
+
+<h2 align ="center"><img src = "assets/docs/ready.jpg"></h2>
+
+- If the user enters a blank space or non letter character, an error message will alert them that a name is required to play.
+
+<h2 align ="center"><img src = "assets/docs/ready-error.jpg"></h2>
+
 
 ### Select Difficulty Level
 - The player is greeted and then asked to select level - easy, medium or hard.
+
+<h2 align ="center"><img src = "assets/docs/level.jpg"></h2>
+
 - If user enters anything other than e, easy, m, medium, h, hard, an error message will alert them to correctly select the level.
+
+<h2 align ="center"><img src = "assets/docs/level-error.jpg"></h2>
+
+
 
 
 
