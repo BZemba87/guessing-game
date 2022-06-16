@@ -13,6 +13,12 @@ def clear_screen():
 
 termcolor.cprint("Welcome to the Number Guessing Game!", "green")
 time.sleep(2)
+termcolor.cprint("You have 5, 8 or 10 chances to guess", "green")
+time.sleep(1)
+termcolor.cprint("the correct number.", 'green')
+time.sleep(2)
+termcolor.cprint("Good luck!", "green")
+time.sleep(4)
 clear_screen()
 
 
