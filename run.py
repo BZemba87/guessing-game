@@ -88,7 +88,6 @@ def play_game():
         elif guess == number:
             print('You got it in ' + str(number_of_guesses) + ' tries!')
             time.sleep(1)
-            clear_screen()
             return
     else:
         print('You have run out of guesses! The number was', number)

@@ -37,24 +37,22 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 # Features
 
-## Existing Features
-
-### Welcome Message
+## Welcome Message
 - The player is greeted with a welcome message, name of the game and a short message explaining the aim of the game.
 
 <h2 align ="center"><img src = "assets/docs/welcome.jpg"></h2>
 
-### Ready to Play
+## Ready to Play
 - The player is taken to the next page which asks if they are ready to play and they are then prompted to enter a name.
 
 <h2 align ="center"><img src = "assets/docs/ready.jpg"></h2>
 
-- If the user enters a blank space or non letter character, an error message will alert them that a name is required to play.
+- If the player enters a blank space or non letter character, an error message will alert them that a name is required to play.
 
 <h2 align ="center"><img src = "assets/docs/ready-error.jpg"></h2>
 
 
-### Select Difficulty Level
+## Select Difficulty Level
 - The player is greeted and then asked to select level - easy, medium or hard.
 
 <h2 align ="center"><img src = "assets/docs/level.jpg"></h2>
@@ -63,7 +61,7 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 <h2 align ="center"><img src = "assets/docs/level-error.jpg"></h2>
 
-### Game Play
+## Game Play
 - The computer tells the player it is thinking of a number between 1 and 10, 1 and 100 or 1 and 500 depending on the difficulty level selected by the player.  
 
 <h2 align ="center"><img src = "assets/docs/play.jpg"></h2>
@@ -75,6 +73,10 @@ The game is between the computer and 1 player.  The player must enter a name and
 - The player will be alerted if they have entered an invalid guess (such as a letter, blank space or character) and they will be prompted to try again.
 
 <h2 align ="center"><img src = "assets/docs/play-error.jpg"></h2>
+
+- If the player runs out of guesses, they lose the game and the correct number is advised.  The computer will also ask if they would like to play again.  
+
+<h2 align ="center"><img src = "assets/docs/lose.jpg"></h2>
 
 
 
