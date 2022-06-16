@@ -11,7 +11,7 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-termcolor.cprint("Welcome to the Number Guessing Game!", "magenta")
+termcolor.cprint("Welcome to the Number Guessing Game!", "green")
 time.sleep(2)
 clear_screen()
 
@@ -99,7 +99,7 @@ def main():
         again = input("Would you like to play again?  (y/n): ")
         clear_screen()
         if again.lower() == "n":
-            termcolor.cprint("Ok, thanks for playing!  See ya!", "magenta")
+            termcolor.cprint("Ok, thanks for playing!  See ya!", "green")
            
 
 
