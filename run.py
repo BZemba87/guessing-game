@@ -63,7 +63,6 @@ def play_game():
     while number_of_guesses <= tries:
         try:
             guess = int(input("What's the number? "))
-            
         except ValueError:
             termcolor.cprint("Must be a number!  Try again.", "red")
             time.sleep(1)
@@ -71,7 +70,7 @@ def play_game():
             play_game()  # stops game from crashing
 
         if guess < number:
-            termcolor.cprint("Oops too low!", "red")
+            termcolor.cprint("Oops, too low!", "red")
             time.sleep(1)
             clear_screen()
             number_of_guesses += 1
@@ -88,7 +87,6 @@ def play_game():
     else:
         print('You have run out of guesses! The number was', number)
         time.sleep(2)
-        
 
 
 def main():
@@ -99,8 +97,7 @@ def main():
         again = input("Would you like to play again?  (y/n): ")
         clear_screen()
         if again.lower() == "n":
-            termcolor.cprint("Ok, thanks for playing!  See ya!", "green")
-           
+            termcolor.cprint("Thanks for playing!  Bye!", "green")
 
 
 if __name__ == "__main__":

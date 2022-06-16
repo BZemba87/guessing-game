@@ -40,6 +40,8 @@ The game is between the computer and 1 player.  The player must enter a name and
 ### Welcome Message
 - The player is greeted with a welcome message and the name of the game.
 
+<h2 align ="center"><img src = "assets/docs/welcome.jpg"></h2>
+
 ### Ready to Play
 - The player is taken to the next page which asks if they are ready to play and they are then prompted to enter a name.
 - If the user enters a number or a blank space, an error message will alert them that a name is required to play.
