@@ -78,6 +78,15 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 <h2 align ="center"><img src = "assets/docs/lose.jpg"></h2>
 
+- If the player wins the game, a message will appear telling them they got it and however many tries they had.  The computer will also ask if they would like to play again.  
+
+<h2 align ="center"><img src = "assets/docs/win.jpg"></h2>
+
+- If the player selects n for no, the computer will thank the player for playing and say bye.  If they select y for yes, the game will start again from the choose level page.
+
+<h2 align ="center"><img src = "assets/docs/bye.jpg"></h2>
+
+
 
 
 
