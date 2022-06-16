@@ -63,7 +63,7 @@ def play_game():
     while number_of_guesses <= tries:
         try:
             guess = int(input("What's the number? "))
-            clear_screen()
+            
         except ValueError:
             termcolor.cprint("Must be a number!  Try again.", "red")
             time.sleep(1)
