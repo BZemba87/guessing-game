@@ -30,7 +30,7 @@ The game is between the computer and 1 player.  The player must enter a name and
 ## User Stories 
 - As a user, I want to play a game that is straightforward and immediately easy to understand
 - As a user, I want to be able to select the difficulty level of the game
-- As a user, I want to be alerted to an invalid input and given the chance to re-enter data 
+- As a user, I want to be alerted to invalid input and given the chance to re-enter data 
 - As a user, I want feedback and hints on my progression
 - As a user, I want feedback on whether I have won or lost
 - As a user, I want the option to play again 
@@ -85,6 +85,28 @@ The game is between the computer and 1 player.  The player must enter a name and
 - If the player selects n for no, the computer will thank the player for playing and say bye.  If they select y for yes, the game will start again from the choose level page.
 
 <h2 align ="center"><img src = "assets/docs/bye.jpg"></h2>
+
+# Testing
+
+##  Testing User Stories 
+
+1.   I want to play a game that is straightforward and immediately easy to understand
+- From the moment the welcome message appears, the user knows what the aim of the game is.
+
+2.   I want to be able to select the difficulty level of the game
+- The user is able to choose between 3 levels - easy, medium or hard.
+
+3.   I want to be alerted to invalid input and given the chance to re-enter data 
+- Invalid input is handled with alert messages and prompts at every point a user can enter data.
+
+4.   I want feedback and hints on my progression
+- The user receives a hint about their current guess and whether the following guess needs to be higher or lower.
+
+5.  I want feedback on whether I have won or lost
+- If the user loses the game, they are told that they have run out of guesses.  If they win the game, they are told how many tries they had.
+
+6.   I want the option to play again 
+- At the end of each game, the user will be asked if they would like to play again.
 
 
 
