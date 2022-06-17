@@ -173,6 +173,21 @@ The game has been deployed using CI's mock terminal for Heroku
 - Click the 'connect' button next to the repository to link it to heroku.
 - To deploy, scroll down and click the 'Deploy Branch' button.
 
+# Credits
+
+## Youtube Tutorials
+- Processorbot - "Number Guessing Game"
+- Code With Me - "Python Functions - Guess the Number Game"
+- Wrt Tech - "Python - Random Number Guessing Game"
+
+## Stackoverflow 
+- How to check user input is a string
+- How to clear the screen in Python
+
+## Replit.com
+- How to use termcolor 
+
+
 
 
 
