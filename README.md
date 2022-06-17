@@ -86,6 +86,11 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 <h2 align ="center"><img src = "assets/docs/bye.jpg"></h2>
 
+## Future Features
+- I would like to add a main menu to the welcome page
+- I would like to add a leaderboard
+- I would like to add a count of how many guesses the player has used during the game
+
 # Testing
 
 ##  Testing User Stories 
@@ -113,6 +118,47 @@ The game is between the computer and 1 player.  The player must enter a name and
 - I ran my code through Pep8 Online and initially received a few issues about whitespace and too many blank lines at the end of the code.  I have fixed these warnings/errors and now there are no issues.
 
 <h2 align ="center"><img src = "assets/docs/validator.jpg"></h2>
+
+## Errors/Bugs/Issues
+- The "You have run out of guesses" message would not print alone without a hint message.  I fixed this by changing the positioning of it - I moved it underneath the code that checks if input is an integer.
+
+- After the above change, this then caused the "You got it in X tries" to start printing when it wasn't meant to.  I fixed this by adding the "You have run out of guesses" code into an else statement.
+
+- A known issue that is irritating me but I have not yet figured out how to fix is after the error message "Must be a number!  Try again.", the game will start again from the choose level page instead of allowing the user to take another guess at "What's the number?".
+
+# Technologies
+
+## Languages
+- Python
+
+## Libraries and Programs Used
+
+### Github
+- Storing code and deployment
+
+### Gitpod
+- Used for writing and editing code 
+
+### Random Library
+- Used to generate a random number for the game
+
+### Time Library
+- Used to slow the pace of messages appearing 
+
+### Os Library
+- Used to clear the terminal 
+
+### Termcolor
+- Used to add color to specific text throughout the game
+
+### Lucidchart.com
+- Used to design my flowchart for the game
+
+### Am I Responsive
+- Used to show how my game would display on different devices
+
+### Heroku
+- Used to deploy the game 
 
 
 
