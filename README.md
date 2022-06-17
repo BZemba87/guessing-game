@@ -188,6 +188,10 @@ The game has been deployed using CI's mock terminal for Heroku
 - How to use termcolor 
 
 ## CI course material and README example
+- Love Sanwiches
+- PP3 README example provided 
+
+## My new mentor Seun was really helpful and offered great advice and suggestions
 
 
 
