@@ -95,11 +95,11 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 ##  Testing User Stories 
 
-1.   I want to play a game that is straightforward and immediately easy to understand
-- From the moment the welcome message appears, the user knows what the aim of the game is.
+1.   I want to play a game that is straightforward and immediately easy to understand and use
+- From the moment the welcome message appears, the user knows what the aim of the game is.  
 
 2.   I want to be able to select the difficulty level of the game
-- The user is able to choose between 3 levels - easy, medium or hard.
+- The user is able to choose between 3 levels - easy, medium or hard.  This is quite user friendly as it will accept any input that is close enough to one of the 3 levels eg: either the first letter or the full word (e or easy etc)
 
 3.   I want to be alerted to invalid input and given the chance to re-enter data 
 - Invalid input is handled with alert messages and prompts at every point a user can enter data.
