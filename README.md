@@ -108,6 +108,14 @@ The game is between the computer and 1 player.  The player must enter a name and
 6.   I want the option to play again 
 - At the end of each game, the user will be asked if they would like to play again.
 
+## More Testing
+
+- I ran my code through Pep8 Online and initially received a few issues about whitespace and too many blank lines at the end of the code.  I have fixed these warnings/errors and now there are no issues.
+
+<h2 align ="center"><img src = "assets/docs/validator.jpg"></h2>
+
+
+
 
 
 

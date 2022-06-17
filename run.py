@@ -6,7 +6,7 @@ import termcolor
 
 def clear_screen():
     """
-    clears screen after every input and output
+    clears screen after some messages to keep it tidy
     """
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -63,7 +63,6 @@ def play_game():
     number = random.randint(1, max_number)
     print('I am thinking of a number between 1 and ' + str(max_number) + "\n")
     time.sleep(2)
-
 
     number_of_guesses = 1
     while number_of_guesses <= tries:
