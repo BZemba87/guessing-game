@@ -160,6 +160,19 @@ The game is between the computer and 1 player.  The player must enter a name and
 ### Heroku
 - Used to deploy the game 
 
+# Deployment
+
+The game has been deployed using CI's mock terminal for Heroku
+- Fork or clone repository 
+- Create a new Heroku App
+- Go to the settings tab and find the Config Vars section. Click 'Reveal Config Vars'.
+- In the field for KEY enter PORT in all capitals, then in the field for VALUE enter 8000. Then click 'Add'.
+- Set the buildpacks to Python and Node JS in that order
+- Click 'deploy' tab and from the 'Deployment method' section select GitHub and click 'Connect to GitHub'.
+- Enter the repository name as it is in GitHub and click 'search'.
+- Click the 'connect' button next to the repository to link it to heroku.
+- To deploy, scroll down and click the 'Deploy Branch' button.
+
 
 
 
