@@ -187,6 +187,8 @@ The game has been deployed using CI's mock terminal for Heroku
 ## Replit.com
 - How to use termcolor 
 
+## CI course material and README example
+
 
 
 
