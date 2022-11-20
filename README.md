@@ -100,10 +100,14 @@ The game is between the computer and 1 player.  The player must enter a name and
 - From the moment the welcome message appears, the user knows what the aim of the game is.  
 
 2.   I want to be able to select the difficulty level of the game
-- The user is able to choose between 3 levels - easy, medium or hard.  This is quite user friendly as it will accept any input that is close enough to one of the 3 levels eg: either the first letter or the full word (e or easy etc)
+- The user is able to choose between 3 levels - easy, medium or hard.  This is quite user friendly as it will accept any input that is close enough to one of the 3 levels eg: either the first letter or the full word (e or easy etc).  
 
 3.   I want to be alerted to invalid input and given the chance to re-enter data or quit
-- Invalid input is handled with alert messages and prompts at every point a user can enter data.  During game play, the user is also given the option to quit or try again if invalid data is entered.
+- Invalid input is handled with alert messages and prompts at every point a user can enter data:
+ - When user is asked to enter their name, if any invalid data (number, character or blank space) is entered, an alert is printed telling user it must be a name.  
+ - When user is asked to select difficulty level, if any invalid data is entered, an alert is printed telling user to select either e, m or h.
+ - During game play, the user is also given the option to quit or try again if invalid data is entered.
+ - If a user wants to quit, the game will thank them for playing but they will also be asked if they would like to play again and if they enter invalid data (not y or n) then they will be asked again until they enter either y or n. 
 
 4.   I want feedback and hints on my progression
 - The user receives a hint about their current guess and whether the following guess needs to be higher or lower.
@@ -129,7 +133,9 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 - There was a bug that existed where print message "You have run out of guesses!  The number was 0" would sporadically appear at the end of some games alongside the correct message.  Josh in Tutor Support helped me figure out this was activated when invalid data was entered while selecting difficulty level.  To handle the invalid data I was running the play_game() function inside itself but as the game hadn't actually been played, it was triggering the "You have run out of guesses" print message.  I fixed this by setting a boolean to a variable - continue_play = False.
 
-- An error (UnboundLocalError: local variable 'guess' referenced before assignment) was fixed by declaring the guess variable.  
+- An error (UnboundLocalError: local variable 'guess' referenced before assignment) was crashing the program but has now been fixed by declaring the guess variable.  
+
+- While loop in main() function was altered to handle input that isn't y or n - without this, the game would just terminate.  Now, it will ask the user the question again until the correct data is added.
 
 # Technologies
 
