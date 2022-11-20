@@ -120,9 +120,9 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 ## More Testing
 
-- I ran my code through Pep8 Online and initially received a few issues about whitespace and too many blank lines at the end of the code.  I have fixed these warnings/errors and now there are no issues.
+- I ran my code through CI Python Linter and initially received a couple of warnings about no whitespace after keyword on line 86 (added a space between while and the ()) and a warning about line 87 being too long so I removed the word "level".
 
-<h2 align ="center"><img src = "assets/docs/validator.jpg"></h2>
+<h2 align ="center"><img src = "assets/docs/python_linter.jpg"></h2>
 
 ## Errors/Bugs/Issues
 - The "You have run out of guesses" message would not print alone without a hint message.  I fixed this by changing the positioning of it - I moved it underneath the code that checks if input is an integer.

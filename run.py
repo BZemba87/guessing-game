@@ -83,8 +83,8 @@ def play_game():
     generated_number = 0
     number_of_guesses = 1
     continue_play = False
-    while(continue_play is False):
-        level = input('Choose level - E for easy, M for medium or H for hard: \n')
+    while (continue_play is False):
+        level = input('Choose - E for easy, M for medium or H for hard: \n')
         if level.lower() == "e" or level.lower() == "easy":
             max_number = 10
             tries = 5
@@ -104,8 +104,8 @@ def play_game():
             termcolor.cprint("Sorry!  Please select e, m or h!", "red")
             print(" ")
             time.sleep(1)
-            
-        number_of_guesses = 1
+
+            number_of_guesses = 1
     while number_of_guesses <= tries:
         guess = gets_guess_number()
         if guess == "q" or guess == "quit":
