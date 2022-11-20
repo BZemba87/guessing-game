@@ -39,6 +39,9 @@ def get_name():
 
 
 def generate_number(max_number):
+    """
+    Computer generates random number within selected range
+    """
     number = random.randint(1, max_number)
     print('I am thinking of a number between 1 and ' + str(max_number) + "\n")
     time.sleep(2)

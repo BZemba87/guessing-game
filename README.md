@@ -125,7 +125,11 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 - After the above change, this then caused the "You got it in X tries" to start printing when it wasn't meant to.  I fixed this by adding the "You have run out of guesses" code into an else statement.
 
-- A bug exists where "You have run out of guesses!  The number was 0" will sporadically appear at the end of each game alongside the correct message.
+- The program had a bug where after selecting the difficulty level the user is asked what's the number and if the user gives invalid/empty data, the program asks the user to choose the difficulty level again instead of asking the user what the number is again.  This wasn't a good user experience so this was fixed by adding two functions - generate_number() and gets_guess_number().
+
+- There was a bug that existed where print message "You have run out of guesses!  The number was 0" would sporadically appear at the end of some games alongside the correct message.  Josh in Tutor Support helped me figure out this was activated when invalid data was entered while selecting difficulty level.  To handle the invalid data I was running the play_game() function inside itself but as the game hadn't actually been played, it was triggering the "You have run out of guesses" print message.  I fixed this by setting a boolean to a variable - continue_play = False.
+
+- An error (UnboundLocalError: local variable 'guess' referenced before assignment) was fixed by declaring the guess variable.  
 
 # Technologies
 
@@ -191,6 +195,8 @@ The game has been deployed using CI's mock terminal for Heroku
 ## CI course material and README example
 - Love Sanwiches
 - PP3 README example provided 
+
+## Josh in Tutor Support 
 
 ## My new mentor Seun was really helpful and offered great advice and suggestions
 
