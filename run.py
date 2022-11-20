@@ -75,29 +75,34 @@ def play_game():
     """
     tries = 0
     max_number = 0
-    level = input('Choose level - E for easy, M for medium or H for hard: \n')
     time.sleep(0.5)
     clear_screen()
     generated_number = 0
-    if level.lower() == "e" or level.lower() == "easy":
-        max_number = 10
-        tries = 5
-        generated_number = generate_number(max_number)
-    elif level.lower() == "m" or level.lower() == "medium":
-        max_number = 100
-        tries = 8
-        generated_number = generate_number(max_number)
-    elif level.lower() == "h" or level.lower() == "hard":
-        max_number = 500
-        tries = 10
-        generated_number = generate_number(max_number)
-    else:
-        termcolor.cprint("Sorry!  Please select e, m or h!", "red")
-        print(" ")
-        time.sleep(1)
-        play_game()  # stops game from crashing
-
     number_of_guesses = 1
+    continue_play = False
+    while(continue_play is False):
+        level = input('Choose level - E for easy, M for medium or H for hard: \n')
+        if level.lower() == "e" or level.lower() == "easy":
+            max_number = 10
+            tries = 5
+            generated_number = generate_number(max_number)
+            continue_play = True
+        elif level.lower() == "m" or level.lower() == "medium":
+            max_number = 100
+            tries = 8
+            generated_number = generate_number(max_number)
+            continue_play = True
+        elif level.lower() == "h" or level.lower() == "hard":
+            max_number = 500
+            tries = 10
+            generated_number = generate_number(max_number)
+            continue_play = True
+        else:
+            termcolor.cprint("Sorry!  Please select e, m or h!", "red")
+            print(" ")
+            time.sleep(1)
+            
+        number_of_guesses = 1
     while number_of_guesses <= tries:
         guess = gets_guess_number()
         if guess == "q" or guess == "quit":
@@ -124,6 +129,11 @@ def play_game():
 
 
 def main():
+    """
+    Asks user if they want to play again and input must be y or n.
+    Game will run if input is y.  If input is n game will
+    terminate.
+    """
     get_name()
     again = 'y'
     while True:
