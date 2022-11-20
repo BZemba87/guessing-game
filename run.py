@@ -126,12 +126,15 @@ def play_game():
 def main():
     get_name()
     again = 'y'
-    while again.lower() == "y":
+    while True:
         play_game()
         again = input("Would you like to play again?  (y/n): ")
         clear_screen()
-        if again.lower() == "n":
+        while again.lower() not in ("y", "n"):
+            again = input("Would you like to play again?  (y/n): ")
+        if again == "n":
             termcolor.cprint("Thanks for playing!  Bye!", "green")
+            break
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 <h1 align="center">NUMBER GUESSING GAME</h1>
 
-Number Guessing Game is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
+Number Guessing Game is a Python terminal game which runs in the Code Institute mock terminal on Heroku.
 
 Players can try to guess a number that the computer randomly generates.  There are 3 difficulty levels the player can choose to play - easy, medium or hard.  
 
@@ -33,7 +33,7 @@ The game is between the computer and 1 player.  The player must enter a name and
 - As a user, I want to be alerted to invalid input and given the chance to re-enter data 
 - As a user, I want feedback and hints on my progression
 - As a user, I want feedback on whether I have won or lost
-- As a user, I want the option to play again 
+- As a user, I want the option to quit or play again 
 
 # Features
 
@@ -70,9 +70,10 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 <h2 align ="center"><img src = "assets/docs/hint.jpg"></h2>
 
-- The player will be alerted if they have entered an invalid guess (such as a letter, blank space or character) and they will be prompted to try again.
+- The player will be alerted if they have entered an invalid guess (such as a letter, blank space or character) and they will be prompted to try again.  The player will also have the option to quit.
 
 <h2 align ="center"><img src = "assets/docs/play-error.jpg"></h2>
+<h2 align ="center"><img src = "assets/docs/quit-or-try-again.jpg"></h2>
 
 - If the player runs out of guesses, they lose the game and the correct number is advised.  The computer will also ask if they would like to play again.  
 
@@ -101,8 +102,8 @@ The game is between the computer and 1 player.  The player must enter a name and
 2.   I want to be able to select the difficulty level of the game
 - The user is able to choose between 3 levels - easy, medium or hard.  This is quite user friendly as it will accept any input that is close enough to one of the 3 levels eg: either the first letter or the full word (e or easy etc)
 
-3.   I want to be alerted to invalid input and given the chance to re-enter data 
-- Invalid input is handled with alert messages and prompts at every point a user can enter data.
+3.   I want to be alerted to invalid input and given the chance to re-enter data or quit
+- Invalid input is handled with alert messages and prompts at every point a user can enter data.  During game play, the user is also given the option to quit or try again if invalid data is entered.
 
 4.   I want feedback and hints on my progression
 - The user receives a hint about their current guess and whether the following guess needs to be higher or lower.
@@ -124,7 +125,7 @@ The game is between the computer and 1 player.  The player must enter a name and
 
 - After the above change, this then caused the "You got it in X tries" to start printing when it wasn't meant to.  I fixed this by adding the "You have run out of guesses" code into an else statement.
 
-- A known issue that is irritating me but I have not yet figured out how to fix is after the error message "Must be a number!  Try again.", the game will start again from the choose level page instead of allowing the user to take another guess at "What's the number?".
+- A bug exists where "You have run out of guesses!  The number was 0" will sporadically appear at the end of each game alongside the correct message.
 
 # Technologies
 
